@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拾光待办 (ChronoTodo) - 官方主页</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #F9FAFB;
+        --text-muted: #9CA3AF;
+        --bg: #111827;
+        --card-bg: #1F2937;
+        --border: #374151;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+      background: var(--card-bg);
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      box-shadow: 0 6px 18px rgba(79, 70, 229, 0.25);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px 0;
+      color: var(--text);
+    }
+    .tagline {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+    .features {
+      text-align: left;
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(79, 70, 229, 0.04);
+      border-radius: 12px;
+    }
+    .features li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .links {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-secondary {
+      background: var(--border);
+      color: var(--text);
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>拾光待办</h1>
+    <div style="color: var(--primary); font-weight: 600; font-size: 18px; margin-bottom: 6px;">ChronoTodo</div>
+    <div class="tagline">优雅从容的时间与待办管理 · 本地优先 · 纯粹隐私 · iCloud 无感同步</div>
+
+    <div class="features">
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>✨ <strong>本地优先 (Local-First)：</strong>基于 SQLite 本地数据库，毫秒级响应，离线完整可用</li>
+        <li>☁️ <strong>原生 iCloud 同步：</strong>利用 Apple CloudKit 私有容器，在 iPhone 与 Mac 间无缝双端同步</li>
+        <li>🔒 <strong>绝对隐私保护：</strong>无需注册第三方账户，无任何追踪与广告，数据全归您所有</li>
+        <li>⏰ <strong>灵活日程管理：</strong>支持子任务、周期循环、分类标签与本地定时提醒</li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <a href="privacy.html" class="btn btn-secondary">隐私政策 (Privacy)</a>
+      <a href="support.html" class="btn btn-secondary">技术支持 (Support)</a>
+    </div>
+
+    <div class="footer">
+      © 2026 拾光待办 (ChronoTodo) · 开发团队: Hao Zeng
+    </div>
+  </div>
+</body>
+</html>

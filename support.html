@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拾光待办 (ChronoTodo) - 技术支持与帮助 (Support & Help)</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #F9FAFB;
+        --text-muted: #9CA3AF;
+        --bg: #111827;
+        --card-bg: #1F2937;
+        --border: #374151;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-q {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .contact-card {
+      background: rgba(79, 70, 229, 0.06);
+      border: 1px solid rgba(79, 70, 229, 0.2);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 25px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>拾光待办 (ChronoTodo) 技术支持</h1>
+    <div class="subtitle">感谢使用拾光待办。如果您在使用过程中遇到任何问题或有功能建议，请参阅以下常见问题或随时与我们联系。</div>
+
+    <h2>常见问题 (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">1. 如何在 iPhone 和 Mac 之间同步数据？</div>
+      <p>只要您的 iPhone 和 Mac 登录了同一个 Apple ID，并在系统设置中为“拾光待办”开启了 iCloud 权限，应用启动或产生修改时就会自动通过 Apple CloudKit 在双端之间同步，无需任何手动配置。</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">2. 为什么新建的任务没有同步到另一台设备？</div>
+      <p>请按以下步骤排查：<br>
+      ① 确认两台设备网络连接正常；<br>
+      ② 检查系统设置中「Apple 账户 → iCloud → 使用 iCloud 的 App」是否已开启本应用权限；<br>
+      ③ 将应用切入后台后再切回前台，或点击设置页面的「立即同步」按钮触发同步。</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">3. 任务提醒没有弹出？</div>
+      <p>请检查系统设置中的「通知」，确保已允许“拾光待办”发送通知，且未被免打扰模式（专注模式）过滤。</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">4. 数据会丢失吗？如何备份？</div>
+      <p>本应用采用“本地优先”架构，数据首先保存在本地 SQLite 数据库中。即便无网络或退出 iCloud，本地数据依然完整可用。登录 iCloud 后将自动双重备份至您的私有云端。</p>
+    </div>
+
+    <h2>联系开发者</h2>
+    <div class="contact-card">
+      <p style="margin: 0 0 10px 0;"><strong>遇到 Bug、异常闪退或有新功能想法？</strong></p>
+      <p style="margin: 0 0 6px 0;">📮 <strong>支持邮箱：</strong><a href="mailto:zenghao.0708@163.com">zenghao.0708@163.com</a></p>
+      <p style="margin: 0 0 6px 0;">💻 <strong>开源与反馈：</strong><a href="https://github.com/zenghao0708/todoApp/issues" target="_blank">GitHub Issue 提交</a></p>
+      <p style="margin: 0;">📜 <strong>隐私政策：</strong><a href="privacy.html">查看隐私政策</a></p>
+    </div>
+
+    <div class="footer">
+      © 2026 拾光待办 (ChronoTodo) · 保留所有权利
+    </div>
+  </div>
+</body>
+</html>
