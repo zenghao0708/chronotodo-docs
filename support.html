@@ -98,16 +98,23 @@
     <h1>拾光待办 (ChronoTodo) 技术支持</h1>
     <div class="subtitle">感谢使用拾光待办。如果您在使用过程中遇到任何问题或有功能建议，请参阅以下常见问题或随时与我们联系。</div>
 
+    <section class="contact-card" id="account-deletion" aria-labelledby="account-deletion-title">
+      <h2 id="account-deletion-title"><a href="account-deletion.html">Request account and data deletion / 申请删除账号及数据</a></h2>
+      <p lang="en">ChronoTodo / 拾光待办 — Developer: 曾浩 (Zeng Hao). Updated October 19, 2026. Send a manual request from your registered email address using the <a href="account-deletion.html#request-by-email">account deletion instructions</a>. You can use this route after uninstalling the app. Never send verification codes or passwords.</p>
+      <p>开发者为曾浩，更新日期为 2026 年 10 月 19 日。请从注册邮箱按<a href="account-deletion.html#request-by-email-zh">删除申请步骤</a>手动联系现有支持邮箱；卸载后也可申请，无需重新安装或登录应用。请勿发送验证码或密码。<a href="privacy.html#android-privacy-1-2">Android 1.2+ 隐私说明</a></p>
+    </section>
+
     <!-- 鸿蒙帮助与 Apple 平台功能说明分别列出，入口以共享界面为准。 -->
     <section id="harmonyos-support" aria-labelledby="harmonyos-support-title">
-      <h2 id="harmonyos-support-title">鸿蒙版本 1.1.0 使用帮助</h2>
-      <p>鸿蒙版本提供本地待办、番茄时钟与重要日子，支持简体中文、英文和日文。下方有关 Apple 账户、iCloud 同步和 Sentry 诊断的帮助适用于提供这些功能的平台；鸿蒙版本目前不提供云同步，不向 Sentry 发送诊断报告。</p>
+      <h2 id="harmonyos-support-title">鸿蒙版本使用帮助</h2>
+      <p>鸿蒙版本提供本地待办、番茄时钟、重要日子、拾光云同步与邮箱提醒，支持简体中文、英文和日文。下方有关 Apple 账户、iCloud 同步的帮助适用于提供这些功能的 Apple 平台；鸿蒙版本不接入 Apple iCloud，也不向 Sentry 发送诊断报告。</p>
       <ul>
         <li><strong>番茄时钟：</strong>手机底部第三个入口或宽屏侧栏进入；可调整专注与休息时长、关联待办，并查看完成记录。默认每完成四次专注进入长休息，可在设置中调整间隔，下一阶段由您手动开始。</li>
         <li><strong>待办箱：</strong>手机待办页右上角“更多”菜单或宽屏侧栏仍可进入，已有任务不会因入口调整而删除。</li>
-        <li><strong>重要日子：</strong>支持公历与中国农历、年度重复、置顶及本地计日。主动启用重要日子本地提醒时，应用按功能支持情况请求通知授权，由鸿蒙系统在本机处理；实际提示受系统授权、提醒服务支持和后台或省电策略影响。邮箱设置仅保存在本机，当前不会发信。</li>
+        <li><strong>重要日子：</strong>支持公历与中国农历、年度重复、置顶及本地计日。鸿蒙重要日子系统提醒尚不可用；番茄与待办提醒可用，邮箱提醒需登录并验证邮箱后启用。</li>
+        <li><strong>云同步与邮箱提醒：</strong>均为主动启用。设置页勾选上传同意并启用「拾光云同步」后，分类、待办和重要日子会上传至开发者管理的云同步服务用于跨设备同步；登录邮箱不会自动启用同步。邮箱提醒只发送到你验证的邮箱。</li>
         <li><strong>提醒：</strong>待办与番茄提醒需通知授权。请检查系统通知、免打扰和锁屏设置；后台及省电策略也可能影响提示。</li>
-        <li><strong>数据与反馈：</strong>业务数据保存在设备本地。遇到异常请保留现场，先不要卸载或清空数据。手机“更多 → 关于 → 技术支持”、宽屏侧栏“关于 → 技术支持”或支持邮箱均可联系开发者。</li>
+        <li><strong>数据与反馈：</strong>业务数据默认保存在设备本地；启用云同步后按上述范围上传。遇到异常请保留现场，先不要卸载或清空数据。手机“更多 → 关于 → 技术支持”、宽屏侧栏“关于 → 技术支持”或支持邮箱均可联系开发者。</li>
       </ul>
       <p>鸿蒙数据处理详情见 <a href="privacy.html#harmonyos-privacy">鸿蒙隐私说明</a>。</p>
     </section>
@@ -115,16 +122,17 @@
     <h2>常见问题 (FAQ)</h2>
 
     <div class="faq-item">
-      <div class="faq-q">1. 如何在 iPhone 和 Mac 之间同步数据？</div>
-      <p>只要您的 iPhone 和 Mac 登录了同一个 Apple ID，并在系统设置中为“拾光待办”开启了 iCloud 权限，并在应用内开启云同步后，应用会尝试通过 Apple CloudKit 同步。两端需使用同一云端环境的版本；网络、账户或权限异常可能导致延迟，必要时在设置页触发「立即同步」。</p>
+      <div class="faq-q">1. 如何在多台设备之间同步数据？</div>
+      <p>Apple 设备可登录同一个 Apple ID 并开启 iCloud 同步；支持跨平台同步的设备可登录同一邮箱账号、勾选同意并启用「拾光云同步」。同步按所选模式进行，不会同时在两种云端写入；网络、账户或权限异常可能导致延迟，必要时在设置页触发「立即同步」。登录邮箱账号不会自动启用上传。</p>
     </div>
 
     <div class="faq-item">
       <div class="faq-q">2. 为什么新建的任务没有同步到另一台设备？</div>
       <p>请按以下步骤排查：<br>
       ① 确认两台设备网络连接正常；<br>
-      ② 检查系统设置中「Apple 账户 → iCloud → 使用 iCloud 的 App」是否已开启本应用权限；<br>
-      ③ 将应用切入后台后再切回前台，或点击设置页面的「立即同步」按钮触发同步。</p>
+      ② 若使用 iCloud 同步：检查系统设置中「Apple 账户 → iCloud → 使用 iCloud 的 App」是否已开启本应用权限，且两端选择同一种云同步模式；<br>
+      ③ 若使用拾光云同步：确认两端登录了同一邮箱账号、都启用了「拾光云同步」，且账号验证状态正常；<br>
+      ④ 将应用切入后台后再切回前台，或点击设置页面的「立即同步」按钮触发同步。</p>
     </div>
 
     <div class="faq-item">
@@ -134,7 +142,7 @@
 
     <div class="faq-item">
       <div class="faq-q">4. 数据会丢失吗？如何备份？</div>
-      <p>本应用采用“本地优先”架构，数据首先保存在本地 SQLite 数据库中。离线时可使用已保存在设备上的数据。iCloud 提供跨设备同步，<strong>同步不是独立备份</strong>，修改和删除会传播，也可能因网络或账户异常失败。怀疑数据丢失时请保留各设备现场并联系支持，先不要卸载、清库、重置同步或覆盖另一台设备的数据。</p>
+      <p>本应用采用“本地优先”架构，数据首先保存在本地 SQLite 数据库中。离线时可使用已保存在设备上的数据。iCloud 与拾光云同步都提供跨设备同步，<strong>同步不是独立备份</strong>，修改和删除会传播，也可能因网络或账户异常失败。怀疑数据丢失时请保留各设备现场并联系支持，先不要卸载、清库、重置同步或覆盖另一台设备的数据。</p>
     </div>
 
     <h2>问题反馈与诊断控制</h2>

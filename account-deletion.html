@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChronoTodo / 拾光待办 — Account and data deletion / 账号及数据删除</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #F9FAFB;
+        --text-muted: #9CA3AF;
+        --bg: #111827;
+        --card-bg: #1F2937;
+        --border: #374151;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .update-date {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(79, 70, 229, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    ol { padding-left: 24px; }
+    h3 { font-size: 16px; margin-top: 24px; }
+    .request-address { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      body { padding: 20px 12px; }
+      .container { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>ChronoTodo / 拾光待办<br>Account and data deletion</h1>
+    <p class="update-date">Developer: 曾浩 (Zeng Hao) · Updated October 19, 2026<br><span lang="zh-CN">开发者：曾浩 · 更新日期：2026 年 10 月 19 日</span></p>
+    <nav aria-label="Page sections">
+      <a href="#request-by-email">Request deletion by email</a> · <a href="#chinese" lang="zh-CN">中文说明</a> · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a>
+    </nav>
+
+    <section id="request-by-email" aria-labelledby="request-title">
+      <h2 id="request-title">Request deletion without the app</h2>
+      <div class="highlight-box">
+        <p><strong>You can manually request deletion of your ChronoTodo account and associated data by emailing support from the email address registered to that account.</strong> You do not need to reinstall or sign in to the app to use these instructions. This page does not require an account, run a deletion form or send email automatically.</p>
+        <p class="request-address"><strong>Support email:</strong> <a href="mailto:zenghao.0708@163.com">zenghao.0708@163.com</a></p>
+      </div>
+      <ol>
+        <li>Open your own email service and compose a message <strong>from the email address registered to your ChronoTodo account</strong> to the support email above. The email link opens your mail app; you must review and send the message yourself.</li>
+        <li>Use a subject such as <strong>Request deletion of my ChronoTodo account and associated data</strong>. In the message, state that you want your ChronoTodo / 拾光待办 account and its associated server data deleted. You do not need to attach task content, a database or diagnostic logs.</li>
+        <li>Wait for the developer's reply about ownership verification, the deletion request and its result. A sent email is a request, not proof that deletion has completed. <strong>Never send a one-time verification code, password, session token or signing key.</strong> If you cannot access the registered mailbox, contact the same support address to discuss verification; this page does not promise that an unverified request can be completed.</li>
+      </ol>
+      <p>Requests are handled manually. The production response schedule, retention rules and purge arrangements are still awaiting operational confirmation. No fixed number of days or immediate removal of every copy is promised. Any data that must be retained, its reason and the applicable handling should be clarified in the response to your request.</p>
+    </section>
+
+    <section aria-labelledby="in-app-title">
+      <h2 id="in-app-title">Delete in the app</h2>
+      <p>On Android 1.2 and later versions with account support, open <strong>Settings → Cross-platform sync → Email reminders → Delete email account</strong> and confirm. You can delete the account even if cloud sync is off. If the service asks you to verify again, complete the normal email sign-in in the app, then retry deletion. Enter verification codes only into the app's sign-in screen, never into an email to support.</p>
+      <p>Account deletion needs an online server confirmation and a recently verified session. A failure or an offline device does not confirm deletion. Local-only Android 1.0.0 (4) has no ChronoTodo service account to delete. Local tasks, important dates and timers remain usable without an account in supported versions.</p>
+    </section>
+
+    <section aria-labelledby="deleted-data-title">
+      <h2 id="deleted-data-title">Account-associated data covered</h2>
+      <p>The account deletion operation covers the developer-operated account and its associated active service records:</p>
+      <ul>
+        <li>The registered account/email record, related email verification challenges and login sessions.</li>
+        <li>Email reminder subscriptions, their stored event payloads and associated delivery records.</li>
+        <li>Cloud-synced tasks, categories and important dates, associated device registrations, deletion/change history, mutation/batch records and snapshots.</li>
+      </ul>
+      <p>Deleting an account cancels its reminders and access sessions. Signing out, disabling sync, uninstalling the app or deleting one task is not equivalent to deleting the account. Messages already handed to an email delivery provider cannot be recalled.</p>
+    </section>
+
+    <section aria-labelledby="limits-title">
+      <h2 id="limits-title">Separate copies and retention limits</h2>
+      <ul>
+        <li><strong>Local copies and system backups.</strong> Account deletion leaves the business-data copies on your devices. Manage local tasks, dates and history separately, and use your device's data and backup controls where needed. Clearing app data or uninstalling can remove local data, but does not guarantee deletion of system backups or server data.</li>
+        <li><strong>Apple iCloud.</strong> Android does not connect to Apple iCloud. If you used an Apple version, its independent iCloud records are outside the developer-operated account deletion flow. Manage those copies through the applicable Apple app and iCloud settings.</li>
+        <li><strong>Third-party diagnostics.</strong> Sentry records are scrubbed and are not automatically deleted by the account API. Turning off diagnostics or clearing local records does not erase previously received events. You may include a diagnostic-deletion request in your email; if you already have a short-lived support correlation code, you may provide it without raw logs. Account identity alone may not identify scrubbed events. Matching, retention and provider-side deletion handling remain subject to operational confirmation.</li>
+        <li><strong>Historical backups, security and provider records.</strong> Historical server backups, email delivery-provider records and separate security/rate-limit records are not guaranteed to disappear when active account records are deleted. Their production retention, any justified retention exceptions, and purge or backup-restoration procedures are still awaiting operational confirmation. We do not promise complete erasure of all copies or a numeric retention period.</li>
+        <li><strong>Support correspondence.</strong> A manual request creates an email exchange with support. Retention and handling of that correspondence, including information needed to record the request, are also awaiting operational confirmation and can be discussed with the developer.</li>
+      </ul>
+      <p>For collection choices and scope, see the <a href="privacy.html#android-privacy-1-2">Android 1.2+ privacy section</a>, the <a href="privacy.html#android-privacy">older Android 1.0.0 (4) policy</a> and the <a href="privacy.html">full privacy policy</a>.</p>
+    </section>
+
+    <section id="chinese" lang="zh-CN" aria-labelledby="chinese-title">
+      <h2 id="chinese-title">拾光待办（ChronoTodo）账号及数据删除</h2>
+      <p>开发者为曾浩（Zeng Hao），更新日期为 2026 年 10 月 19 日。此页可免账号阅读，无需重新安装或登录应用，不提供在线表单，也不会自动发邮件。</p>
+      <h3 id="request-by-email-zh">从注册邮箱手动申请</h3>
+      <div class="highlight-box">
+        <p class="request-address"><strong>请从注册拾光待办账号时使用的邮箱，手动发送删除申请至现有支持邮箱 <a href="mailto:zenghao.0708@163.com">zenghao.0708@163.com</a>。</strong></p>
+      </div>
+      <ol>
+        <li>打开自己的邮箱服务，使用注册邮箱向上述支持邮箱新建邮件。点击邮箱链接只会打开邮件客户端，仍需自行检查并发送。</li>
+        <li>主题可写「申请删除拾光待办账号及关联数据」，正文说明希望删除 ChronoTodo / 拾光待办账号和关联服务端数据即可，无需附上任务内容、数据库或诊断日志。</li>
+        <li>等待开发者回复并处理归属核验、删除申请和结果确认。发出邮件不代表删除已经完成。<strong>请勿向支持人员发送验证码、密码、会话 token 或签名密钥。</strong>无法使用注册邮箱时，也可联系同一支持邮箱讨论核验方式，但不能保证完成未经核验的删除。</li>
+      </ol>
+      <p>申请由人工处理。生产响应安排、保留及清理规则尚待运营确认，不承诺具体天数或立即删除所有副本；如需保留某些数据，其原因及处理方式应在申请回复中说明。</p>
+      <h3>应用内删除路径</h3>
+      <p>提供账号功能的 Android 1.2 及后续版本可进入<strong>「设置 → 跨平台同步 → 邮箱提醒 → 删除邮箱账号」</strong>并确认，无需先开启云同步。若提示重新验证，请在应用内完成正常邮箱登录后重试；验证码只填入应用登录界面，不发给支持人员。删除需联网、近期验证的会话及服务端确认，离线或失败不代表已删除。Android 1.0.0（4）本地版没有需删除的拾光待办服务账号；支持版本的本地待办、重要日子和计时仍可免账号使用。</p>
+      <h3>删除范围</h3>
+      <ul>
+        <li>开发者运营服务中的账号与注册邮箱记录、相关验证码校验记录及登录会话。</li>
+        <li>邮件提醒订阅、保存的事件内容及关联投递记录。</li>
+        <li>账号关联的云端待办、分类、重要日子、设备注册、删除与变更历史、变更/批次记录及快照。</li>
+      </ul>
+      <p>删除账号会取消该账号的提醒和会话。退出登录、关闭同步、卸载或删除单个任务均不等于删除账号；已交给邮件服务商的邮件无法撤回。</p>
+      <h3>需分别处理的副本与保留边界</h3>
+      <ul>
+        <li><strong>本机和系统备份。</strong>账号删除保留各设备上的业务副本，本地任务、日子和历史需自行管理。清除应用数据或卸载可能移除本机数据，但不保证删除系统备份或服务端数据；备份通过设备和相应服务管理。</li>
+        <li><strong>Apple iCloud。</strong>Android 不接入 Apple iCloud；曾在 Apple 版本使用的独立 iCloud 数据不由账号删除接口处理，请通过相应 Apple 应用与 iCloud 设置管理。</li>
+        <li><strong>第三方诊断。</strong>Sentry 已接收的脱敏记录不会随账号接口自动删除，关闭诊断或清除本地记录也不会清除这些远端事件。可在邮件中另行申请处理；如已有随机短时支持关联码，可提供关联码，不附原始日志。仅凭账号身份未必能定位脱敏事件，匹配、保留与服务商侧删除安排尚待运营确认。</li>
+        <li><strong>历史备份、安全及服务商记录。</strong>历史服务端备份、邮件服务商记录和独立安全/限流记录，不保证在删除活跃账号数据时同步消失。生产保留规则、合理保留例外、清理及备份恢复后的处理规则尚待运营确认，不承诺彻底清除所有副本或数字期限。</li>
+        <li><strong>支持往来邮件。</strong>人工申请会产生支持邮件往来；邮件及必要申请记录的保留与处理规则也尚待运营确认，可向开发者询问。</li>
+      </ul>
+      <p>数据收集与选择见<a href="privacy.html#android-privacy-1-2">Android 1.2+ 隐私说明</a>、<a href="privacy.html#android-privacy">Android 1.0.0（4）旧版说明</a>和<a href="privacy.html">完整隐私政策</a>。其他问题见<a href="support.html">技术支持</a>。</p>
+    </section>
+
+    <footer class="footer">© 2026 ChronoTodo / 拾光待办 · 曾浩 (Zeng Hao)</footer>
+  </main>
+</body>
+</html>
